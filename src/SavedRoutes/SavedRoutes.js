@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
+
 
 export class SavedRoutes extends Component {
   render() {
@@ -7,6 +9,9 @@ export class SavedRoutes extends Component {
         <header>
           <nav>
             <h3>SAVED ROUTES COLLECTION</h3>
+            <Link to={"/SavedRoutes"}><p>Saved Collection</p></Link>
+            <Link to={"/CreateRoute"}><p>Create a new route!</p></Link>
+            <Link to={"/SiteRef"}><p>Site Reference Page</p></Link>
           </nav>
         </header>
         <section>
