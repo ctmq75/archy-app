@@ -1,65 +1,109 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
+import { GoogleApiWrapper } from "google-maps-react";
+import Directions from '../Directions/Directions.js'
 
 
 export class CreateRoute extends Component {
+
+
   render() {
+
     return (
       <div>
         <header>
           <nav>
             <h3>CREATE NEW ROUTE</h3>
-            <Link to={"/SavedRoutes"}><p>Saved Collection</p></Link>
-            <Link to={"/CreateRoute"}><p>Create a new route!</p></Link>
-            <Link to={"/SiteRef"}><p>Site Reference Page</p></Link>
-
+            <a href={"/homepage"}>
+              <p>Home</p>
+            </a>
+            <a href={"/CreateRoute"}>
+              <p>Create a new route!</p>
+            </a>
+            <a href={"/SiteRef"}>
+              <p>Site Reference Page</p>
+            </a>
           </nav>
         </header>
+
         <section>
-          <form id="record-dream">
+          <form id="create-route">
+
             <div className="form-section">
-              <label htmlFor="dream-title">Route Name</label>
-              <input
-                type="text"
-                name="dream-title"
-                placeholder="route 1"
-                required
-              />
-            </div>
-            <div className="form-section">
-              <label htmlFor="dream-summary">
-                List of Notable Architectural buildings
-              </label>
               <p>
                 <strong>
                   Select "Site" from list to add to your route. You may
                   control-click (Windows) or command-click (Mac) to select more
                   than one.
                 </strong>
+                <br />
+                <br />
+                Note: *for now* All routes start at Chicago's Navy Pier and end at Tribune Tower. Sites selected from the list will be added as stops on the route. Select up to 10 sites and we will give you the shortest optimized route!
               </p>
               <br />
-              <p>
-                *the list below will be much bigger and may include picture of
-                building and/or brief description in addition to the separate
-                page with more details*
-              </p>
-              <select multiple size="6">
-                <option value="American">The Wrigley Building</option>
-                <option value="Andean">Merchandice Mart</option>
-                <option value="Chilean">Marina City Towers</option>
-                <option value="Greater">The Rookery Building</option>
-                <option value="James's">Chicago Cultural Center</option>
-                <option value="Lesser">Aqua Tower</option>
-              </select>
+
+              <div id='dir-form'>
+
+              </div>
             </div>
 
-            <Link to={"/ResultPage"}><button type="submit">Submit</button></Link>
-            <button type="reset">Reset</button>
+
           </form>
+          <section>
+            <Directions />
+          </section>
         </section>
+        <br />
+        <br />
+
       </div>
     );
   }
 }
 
-export default CreateRoute;
+
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyAbs_-rCldIrwqDWH_cu-I8uXKfJPdxjPc",
+})(CreateRoute);
+
+/*
+
+handleSubmit(e) {
+  e.preventDefault();
+  console.log("submit handled!");
+
+  const baseUrl =
+    "https://maps.googleapis.com/maps/api/directions/json?";
+
+  let searchEntry = `${this.state.searchEntry}`;
+
+  const queryString = `${baseUrl}?q=${searchEntry}&${filter}&${printType}`;
+  fetch(queryString)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error();
+    })
+    .then(responseJSon => {
+      console.log(responseJSon);
+      this.setState({
+        searchResults: responseJSon.items
+      });
+    })
+    .catch(e => {
+      console.log(e);
+      this.setState({ error: e.message });
+    });
+}
+
+
+
+
+
+                <option value="James's">Chicago Cultural Center</option>
+                <option value="American">The Wrigley Building</option>
+                <option value="Andean">Merchandise Mart</option>
+                <option value="Chilean">Marina City Towers</option>
+                <option value="Greater">The Rookery Building</option>
+                <option value="Lesser">Aqua Tower</option>
+*/

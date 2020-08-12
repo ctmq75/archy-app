@@ -1,22 +1,29 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom'
+import Map from '../Map/Map.js'
+import {MyContext} from '../MyContext/MyContext.js'
+import Directions from '../Directions/Directions.js'
 
 
 export class ResultPage extends Component {
   render() {
     return (
+      <MyContext.Provider>
       <div>
         <header>
           <nav>
             <h3>ROUTE RESULT</h3>
-            <Link to={"/SavedRoutes"}><p>Saved Collection</p></Link>
-            <Link to={"/CreateRoute"}><p>Create a new route!</p></Link>
-            <Link to={"/SiteRef"}><p>Site Reference Page</p></Link>
+            <a href={"/SavedRoutes"}><p>Saved Collection</p></a>
+            <a href={"/CreateRoute"}><p>Create a new route!</p></a>
+            <a href={"/SiteRef"}><p>Site Reference Page</p></a>
 
           </nav>
         </header>
-        <section>**Route picture**</section>
-
+        <section>*Map</section>
+        <MyContext.Provider
+            value={this.props.value}>
+      <Map value={this.props.value}/>
+      </MyContext.Provider>
         <section>
           <ul>
             <li>Driving </li>
@@ -31,6 +38,7 @@ export class ResultPage extends Component {
           <button>Share with Friends!</button>
         </section>
       </div>
+      </MyContext.Provider>
     );
   }
 }

@@ -1,23 +1,40 @@
 {
   "name": "archy-app",
   "version": "0.1.0",
-  "private": true,
+  "main": "index.js",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/jest-dom": "^5.11.3",
+    "@testing-library/react": "^10.4.8",
+    "date-fns": "^2.15.0",
+    "dotenv": "^8.2.0",
+    "google-maps-react": "^2.0.6",
+    "googlemaps": "^1.12.0",
+    "html2canvas": "^1.0.0-alpha.12",
+    "node": "^14.7.0",
+    "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-google-maps": "^9.4.5",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^3.4.1",
+    "reactjs-popup": "^1.5.0"
+  },
+  "devDependencies": {
+    "jest-dom": "^4.0.0",
+    "dotenv": "^8.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "vercel --prod"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "eslintConfig": {
     "extends": "react-app"
   },

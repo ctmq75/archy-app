@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
+import MapContainer from '../MapContainer/MapContainer.js'
 
 
 export class SiteRef extends Component {
@@ -9,24 +9,16 @@ export class SiteRef extends Component {
         <header>
           <nav>
             <h3>Reference Page</h3>
-            <Link to={"/SavedRoutes"}><p>Saved Collection</p></Link>
-            <Link to={"/CreateRoute"}><p>Create a new route!</p></Link>
+            <a href={"/CreateRoute"}><p>Create a new route!</p></a>
 
           </nav>
         </header>
-        <h1>Chicago's Most Notable Artchitechtural Sites!</h1>
-        <p>(each site will have at least a photo and description)</p>
-        <section>The Wrigley Building</section>
+        <h1>Chicago's Most Notable Artchitechtural Sites</h1>
+        <p>Click each site marker on map for photo and description!</p>
+        <section>
+          <MapContainer />
+        </section>
 
-        <section>Merchandice Mart</section>
-
-        <section>Marina City Towers</section>
-
-        <section>The Rookery Building</section>
-
-        <section>Aqua Tower</section>
-        <section>example building</section>
-        <section>example building</section>
       </div>
     );
   }

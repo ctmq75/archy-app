@@ -9,9 +9,11 @@ export class SavedRoutes extends Component {
         <header>
           <nav>
             <h3>SAVED ROUTES COLLECTION</h3>
-            <Link to={"/SavedRoutes"}><p>Saved Collection</p></Link>
-            <Link to={"/CreateRoute"}><p>Create a new route!</p></Link>
-            <Link to={"/SiteRef"}><p>Site Reference Page</p></Link>
+            <a href={"/homepage"}>
+              <p>Home</p>
+            </a>
+            <a href={"/CreateRoute"}><p>Create a new route!</p></a>
+            <a href={"/SiteRef"}><p>Site Reference Page</p></a>
           </nav>
         </header>
         <section>
