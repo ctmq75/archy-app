@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
 import Map from '../Map/Map.js'
 import {MyContext} from '../MyContext/MyContext.js'
-import Directions from '../Directions/Directions.js'
 
 
 export class ResultPage extends Component {

@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+#mapsection {
+    display: flex;
+    justify-content: center;
+}
+
 h1,
 p {
   font-family: Lato;

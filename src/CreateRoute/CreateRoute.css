@@ -1,0 +1,28 @@
+#createhead {
+    display: flex;
+    justify-content: space-between;
+    color: #F5F5F5;
+    background-color: #0f000f;
+    width: 100%;
+    padding-left: 10px;
+    background-image: url(../images/old-wall.png);
+    font-family: 'Oxygen', sans-serif;
+    }
+
+
+.links3 {
+    margin-left: 1%;
+    color: #F5F5F5;
+    text-decoration: none;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#createcontainer {
+    background-color: #060054;
+    background-image: url(../images/assault.png)
+}
+
+#form-section {
+    
+}
+

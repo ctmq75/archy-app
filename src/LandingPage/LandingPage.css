@@ -1,3 +1,35 @@
 nav {
-    background: grey;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2%;
+    color: #F5F5F5;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+.links {
+    padding-left: 5%;
+    color: #F5F5F5;
+    text-decoration: none;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#landpage {
+    background-image: url(../images/chicago.jpg);
+    background-size: cover;
+}
+
+#democreds {
+    color: greenyellow;
+
+}
+
+h3 {
+    color: #F5F5F5;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button, Input, Required } from "../Utils/Utils";
 import AuthApiService from "../services/auth-api-service";
+import './RegistrationForm.css'
 
 export default class RegistrationForm extends Component {
   static defaultProps = {
@@ -38,7 +39,7 @@ export default class RegistrationForm extends Component {
         <div className="full_name">
           <label htmlFor="RegistrationForm__full_name">
             Full name <Required />
-          </label>
+          </label><br />
           <Input
             name="full_name"
             type="text"
@@ -49,7 +50,7 @@ export default class RegistrationForm extends Component {
         <div className="user_name">
           <label htmlFor="RegistrationForm__user_name">
             User name <Required />
-          </label>
+          </label><br />
           <Input
             name="user_name"
             type="text"
@@ -60,7 +61,7 @@ export default class RegistrationForm extends Component {
         <div className="password">
           <label htmlFor="RegistrationForm__password">
             Password <Required />
-          </label>
+          </label><br />
           <Input
             name="password"
             type="password"
@@ -69,7 +70,7 @@ export default class RegistrationForm extends Component {
           ></Input>
         </div>
         <div className="nickname">
-          <label htmlFor="RegistrationForm__nickname">Nickname</label>
+          <label htmlFor="RegistrationForm__nickname">Nickname</label><br />
           <Input
             name="nickname"
             type="text"

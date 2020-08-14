@@ -1,0 +1,10 @@
+.LoginPage {
+    background-image: url('../images/chicagobean.jpg');
+    background-size: cover;
+    width: 100%;
+
+}
+#loginhead {
+    color: #F5F5F5;
+    font-family: 'Oxygen', sans-serif;
+}

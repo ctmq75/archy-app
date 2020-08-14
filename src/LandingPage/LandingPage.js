@@ -1,40 +1,64 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import './LandingPage.css'
-import MapContainer from '../MapContainer/MapContainer.js'
-
+import React, { Component } from "react";
+import "./LandingPage.css";
+import MapContainer from "../MapContainer/MapContainer.js";
+import RegistrationForm from "../RegistrationForm/RegistrationForm"
 
 export class LandingPage extends Component {
-    render() {
-        return (
-    <div className="App">
-      <header>
-      <nav>
-        <h3>Self-Guided Architechtural Tour of Chicago</h3>
-        
-        <a href={"/LoginPage"}><p>LOGIN</p></a>
-        <a href={"/RegistrationPage"}><p>Register!</p></a>
-        <a href={"/SiteRef"}><p>Site Reference Page</p></a>
+  static defaultProps = {
+    history: {
+      push: () => {},
+    },
+  }
+  handleRegistrationSuccess = () => {
+    const { history } = this.props
+    history.push('/LoginPage')
+  }
+  render() {
+    return (
+      <div className="App" id='landpage'>
+        <header id="header">
+          <h3>Self-Guided Architechtural Tour of Chicago</h3>
 
-          
-        </nav>
-      </header>
-      <section>
-        <p><u>Demo Credentials</u>
+          <nav>
+            <a className="links" href={"/LoginPage"}>
+              <p>Login</p>
+            </a>
+            <a className="links" href={"/RegistrationPage"}>
+              <p>Register!</p>
+            </a>
+            <a className="links" href={"/SiteRef"}>
+              <p>Site Reference Page</p>
+            </a>
+          </nav>
+        </header>
+        <section id='democreds'>
+          <p>
+            <u>Demo Credentials</u>
+            <br />
+            Username: "user" <br /> Password: "Password1!"
+          </p>
+        </section>
+        <section>
+          <h3>Register to get Started!</h3>
+          <RegistrationForm 
+          onRegistrationSuccess={this.handleRegistrationSuccess} 
+          />
+        </section>
         <br />
-        Username: "user" <br /> Password: "Password1!"
-        </p>
-        <MapContainer />
-      </section>
-
-    </div>
-
-        )
-    }
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    );
+  }
 }
 
-export default LandingPage
-
+export default LandingPage;
 
 /*
 <form className='signup-form'>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { GoogleApiWrapper } from "google-maps-react";
 import Directions from '../Directions/Directions.js'
+import './CreateRoute.css'
 
 
 export class CreateRoute extends Component {
@@ -9,17 +10,17 @@ export class CreateRoute extends Component {
   render() {
 
     return (
-      <div>
-        <header>
+      <div id='createcontainer'>
+        <header id='createhead'>
+        <h3>CREATE NEW ROUTE</h3>
           <nav>
-            <h3>CREATE NEW ROUTE</h3>
-            <a href={"/homepage"}>
+            <a className='links3' href={"/homepage"}>
               <p>Home</p>
             </a>
-            <a href={"/CreateRoute"}>
+            <a className='links3' href={"/CreateRoute"}>
               <p>Create a new route!</p>
             </a>
-            <a href={"/SiteRef"}>
+            <a className='links3' href={"/SiteRef"}>
               <p>Site Reference Page</p>
             </a>
           </nav>
@@ -48,9 +49,9 @@ export class CreateRoute extends Component {
 
 
           </form>
-          <section>
+          <div id='mapdiv'>
             <Directions />
-          </section>
+          </div>
         </section>
         <br />
         <br />

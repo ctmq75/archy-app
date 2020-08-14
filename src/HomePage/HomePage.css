@@ -1,0 +1,55 @@
+#container {
+    background-image: url(../images/argyle.png);
+    background-color: #060054;
+}
+
+#homenav {
+    display: flex;
+    flex-direction: row;
+}
+
+#homehead {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1%;
+    color: #F5F5F5;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.homeinfo {
+    font-family: 'Noto Serif', serif;
+}
+
+.homelinks {
+    margin-left: 1%;
+    color: #F5F5F5;
+    text-decoration: none;
+    font-family: 'Oxygen', sans-serif;
+}
+section {
+    color: #F5F5F5;
+}
+
+.margin {
+    margin: 30% 0;
+}
+
+.parallax {
+    background: url(../images/chicagohome.jpg) repeat fixed 100%;
+
+}
+
+.parallax-inner {
+    padding-top: 30%;
+    padding-bottom: 30%
+}
+
+h4, ul {
+    text-align: center;
+    font-size: 150%;
+}
+
+ul {
+    list-style-type: none;
+
+}

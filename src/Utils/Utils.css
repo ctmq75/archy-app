@@ -8,13 +8,13 @@
   .Input,
   .Textarea {
     border: 1px solid #ddd;
-    display: block;
     font-size: 1.1em;
     margin-bottom: 10px;
     padding: 10px;
     text-align: left;
-    width: 100%;
+    width: 35%;
     border-radius: 4px;
+
   }
   
   .Input::placeholder,

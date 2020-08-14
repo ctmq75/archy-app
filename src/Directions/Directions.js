@@ -63,8 +63,9 @@ export default class Directions extends Component {
 
             <button type="reset">Reset</button>
           </div>
+          <br />
         </form>
-        <section id='screenshot'>
+        <section id='mapsection'>
                 <Map value={this.state.value} />
         </section>
         <section>
