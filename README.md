@@ -9,6 +9,9 @@ To get started, simply register for an account. Once registered, login to the ac
 ## Getting Started
 Follow link to live app: https://archy-app.vercel.app/
 
+### Technologies Used
+-HTML, CSS, JavaScript, React, Node, Express, PostgreSQL
+
 ### Dependencies
 
 * Built with React, Google-Maps-React, Node, dotenv, React-Router.
