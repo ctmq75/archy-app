@@ -1,5 +1,6 @@
 # Self Guided Architectural Tour of Chicago
 
+![Alt text](/images/ss.jpeg?raw=true "Optional Title")
 
 ## Description
 
