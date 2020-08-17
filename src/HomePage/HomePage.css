@@ -31,7 +31,7 @@ section {
 }
 
 .margin {
-    margin: 30% 0;
+    margin: 30% 10%;
 }
 
 .parallax {
@@ -47,6 +47,7 @@ section {
 h4, ul {
     text-align: center;
     font-size: 150%;
+    margin: 0 10%;
 }
 
 ul {

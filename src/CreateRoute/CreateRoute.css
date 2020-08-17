@@ -22,7 +22,9 @@
     background-image: url(../images/assault.png)
 }
 
-#form-section {
-    
+#instruct {
+    max-width: 50%;
+    margin-right: auto;
+    margin-left: auto;
 }
 

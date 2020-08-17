@@ -30,7 +30,7 @@ export class CreateRoute extends Component {
           <form id="create-route">
 
             <div className="form-section">
-              <p>
+              <p id='instruct'>
                 <strong>
                   Select "Site" from list to add to your route. You may
                   control-click (Windows) or command-click (Mac) to select more
@@ -38,7 +38,7 @@ export class CreateRoute extends Component {
                 </strong>
                 <br />
                 <br />
-                Note: *for now* All routes start at Chicago's Navy Pier and end at Tribune Tower. Sites selected from the list will be added as stops on the route. Select up to 10 sites and we will give you the shortest optimized route!
+                Note: All routes start at Chicago's Navy Pier and end at Tribune Tower. Sites selected from the list will be added as stops on the route. Select up to 10 sites and we will give you the shortest optimized route!
               </p>
               <br />
 
