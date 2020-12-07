@@ -19,8 +19,12 @@ export default class LoginPage extends Component {
 
   render() {
     return (
+      <div>
       <Section className="LoginPage">
         <h2 id='loginhead'>Login</h2>
+        <section>
+        <p>Username: 'user' <br />Password: 'Password1!'</p>
+      </section>
         <br />
         <LoginForm onLoginSuccess={this.handleLoginSuccess} />
         <br />
@@ -44,6 +48,7 @@ export default class LoginPage extends Component {
         <br />
         <br />
       </Section>
+      </div>
     );
   }
 }

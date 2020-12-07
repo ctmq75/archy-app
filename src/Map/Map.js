@@ -27,7 +27,7 @@ class Map extends Component {
   render(props) {
 
     const waypoints = this.props.value;
-    const directionsService = new google.maps.DirectionsService() || [];
+    const directionsService = new google.maps.DirectionsService();
 
     const origin =  {placeId: 'ChIJ2y7xkU0rDogR3KSIsJbbrNA'}
     const destination = { placeId: 'ChIJr7zdAKwsDogRrMIKO4_-HT0'};

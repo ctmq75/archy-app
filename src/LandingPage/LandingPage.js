@@ -31,13 +31,6 @@ export class LandingPage extends Component {
             </a>
           </nav>
         </header>
-        <section id='democreds'>
-          <p>
-            <u>Demo Credentials</u>
-            <br />
-            Username: "user" <br /> Password: "Password1!"
-          </p>
-        </section>
         <section>
           <h3>Register to get Started!</h3>
           <RegistrationForm 
