@@ -5,23 +5,22 @@ import "./SiteRef.css";
 export class SiteRef extends Component {
   render() {
     return (
-      <div>
-        <header id="refhead">
-          <h3>Reference Page</h3>
-          <a className="links4" href={"/homepage"}>
-            Home
-          </a>
-          <br />
-          <a className="links4" href={"/CreateRoute"}>
-            Create a new route!
-          </a>
-          <br />
-          <br />
+      <div id='site-ref'>
+        <header id='homehead'>
+        <a className="homelinks" href={"/"}><h3>Self-Guided Architechtural Tour of Chicago</h3></a>
+          <nav id='homenav'>
+            <a className='homelinks' href={"/createroute"}>
+              <p>Create a new route!</p>
+            </a>
+            <a className='homelinks' href={"/SiteRef"}>
+              <p>List of Sites</p>
+            </a>
+          </nav>
         </header>
         <section>
           <h1 className='info'>Chicago's Most Notable Artchitechtural Sites</h1>
           <p className='info'>Click each site marker on map for photo and description!</p>
-          <div>
+          <div id='map-bg'>
             <MapContainer />
           </div>
         </section>

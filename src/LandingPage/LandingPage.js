@@ -17,17 +17,17 @@ export class LandingPage extends Component {
     return (
       <div className="App" id='landpage'>
         <header id="header">
-          <h3>Self-Guided Architechtural Tour of Chicago</h3>
+        <a className="homelinks" href={"/"}><h3>Self-Guided Architechtural Tour of Chicago</h3></a>
 
           <nav>
             <a className="links" href={"/LoginPage"}>
               <p>Login</p>
             </a>
-            <a className="links" href={"/RegistrationPage"}>
+            <a className="links" href={"/"}>
               <p>Register!</p>
             </a>
             <a className="links" href={"/SiteRef"}>
-              <p>Site Reference Page</p>
+              <p>List of Sites</p>
             </a>
           </nav>
         </header>

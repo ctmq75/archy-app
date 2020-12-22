@@ -15,7 +15,7 @@ export class HomePage extends Component {
               <p>Create a new route!</p>
             </a>
             <a className='homelinks' href={"/SiteRef"}>
-              <p>Site Reference Page</p>
+              <p>List of Sites</p>
             </a>
           </nav>
         </header>

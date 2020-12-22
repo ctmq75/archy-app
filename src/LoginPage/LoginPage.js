@@ -19,35 +19,47 @@ export default class LoginPage extends Component {
 
   render() {
     return (
-      <div>
-      <Section className="LoginPage">
-        <h2 id='loginhead'>Login</h2>
-        <section>
-        <p>Username: 'user' <br />Password: 'Password1!'</p>
-      </section>
-        <br />
-        <LoginForm onLoginSuccess={this.handleLoginSuccess} />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </Section>
+      <div className="LoginPage">
+        <header id="homehead">
+        <a className="homelinks" href={"/"}><h3>Self-Guided Architechtural Tour of Chicago</h3></a>
+
+          <nav id="homenav">
+            <a className="homelinks" href={"/SiteRef"}>
+              <p>List of Sites</p>
+            </a>
+          </nav>
+        </header>
+        <Section>
+          <h2 id="loginhead">Login</h2>
+          <section>
+            <p>
+              Username: 'user' <br />
+              Password: 'Password1!'
+            </p>
+          </section>
+          <br />
+          <LoginForm onLoginSuccess={this.handleLoginSuccess} />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </Section>
       </div>
     );
   }

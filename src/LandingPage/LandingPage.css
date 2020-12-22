@@ -4,6 +4,9 @@ nav {
     
 }
 
+.App {
+    height: 100%;
+}
 #header {
     display: flex;
     justify-content: space-between;
@@ -23,6 +26,7 @@ nav {
 #landpage {
     background-image: url(../images/chicago.jpg);
     background-size: cover;
+    height: 100%;
 }
 
 #democreds {
